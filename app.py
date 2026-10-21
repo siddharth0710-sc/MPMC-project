@@ -70,7 +70,7 @@ st.caption("Interactive Passenger Request Kiosk • Terminal Stop: OMR - Kelamba
 # Sidebar Hardware Configuration
 st.sidebar.header("⚙️ Hardware Settings")
 port = st.sidebar.text_input("ESP32 Serial Port", value="COM7")
-baud_rate = st.sidebar.selectbox("Baud Rate", [9600, 115200], index=0)
+baud_rate = st.sidebar.selectbox("Baud Rate", [115200, 9600], index=0)
 
 # Session State Initialization
 if "status" not in st.session_state:
